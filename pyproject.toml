@@ -1,5 +1,5 @@
 [project]
-name = "slidev-mcp"
+name = "iflow-mcp_slidev-mcp"
 version = "0.1.0"
 description = "A smart slide generator based on Slidev and LLM"
 readme = "README.md"
@@ -12,3 +12,10 @@ dependencies = [
     "rich>=14.1.0",
     "usermcp>=0.1.2",
 ]
+
+[project.scripts]
+slidev-mcp = "servers.themes.academic.server:main"
+
+[tool.setuptools.packages.find]
+include = ["servers*"]
+exclude = ["tutorial*"]

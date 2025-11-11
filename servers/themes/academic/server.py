@@ -18,4 +18,8 @@ server = SlidevBaseServer(
     template_dir=current_path / 'templates'
 )
 
-mcp.run(transport='stdio')
+def main():
+    mcp.run(transport='stdio')
+
+if __name__ == "__main__":
+    main()
