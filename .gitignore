@@ -223,3 +223,4 @@ out/
 api_id.txt
 logo_prompt.txt
 level.log
+*_request_body.json
